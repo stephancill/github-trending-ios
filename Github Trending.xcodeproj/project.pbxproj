@@ -8,20 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		D46EFA4520022286009EB955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EFA4420022286009EB955 /* AppDelegate.swift */; };
-		D46EFA4720022286009EB955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EFA4620022286009EB955 /* ViewController.swift */; };
 		D46EFA4A20022286009EB955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46EFA4820022286009EB955 /* Main.storyboard */; };
 		D46EFA4C20022286009EB955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46EFA4B20022286009EB955 /* Assets.xcassets */; };
 		D46EFA4F20022286009EB955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46EFA4D20022286009EB955 /* LaunchScreen.storyboard */; };
+		D46EFA5D200222C4009EB955 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46EFA5C200222C4009EB955 /* NotificationCenter.framework */; };
+		D46EFA60200222C4009EB955 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EFA5F200222C4009EB955 /* TodayViewController.swift */; };
+		D46EFA67200222C4009EB955 /* Github Trending Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D46EFA5A200222C3009EB955 /* Github Trending Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D46EFA6F20027BE9009EB955 /* TrendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EFA6E20027BE9009EB955 /* TrendingTableViewController.swift */; };
+		D46EFA7020027C7F009EB955 /* TrendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EFA6E20027BE9009EB955 /* TrendingTableViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D46EFA65200222C4009EB955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D46EFA3920022286009EB955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46EFA59200222C3009EB955;
+			remoteInfo = "Github Trending Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D46EFA6B200222C4009EB955 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D46EFA67200222C4009EB955 /* Github Trending Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D46EFA4120022286009EB955 /* Github Trending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Trending.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46EFA4420022286009EB955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D46EFA4620022286009EB955 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D46EFA4920022286009EB955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D46EFA4B20022286009EB955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46EFA4E20022286009EB955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D46EFA5020022286009EB955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46EFA5A200222C3009EB955 /* Github Trending Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Github Trending Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46EFA5C200222C4009EB955 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D46EFA5F200222C4009EB955 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		D46EFA64200222C4009EB955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46EFA6E20027BE9009EB955 /* TrendingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +64,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D46EFA57200222C3009EB955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46EFA5D200222C4009EB955 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				D46EFA4320022286009EB955 /* Github Trending */,
+				D46EFA5E200222C4009EB955 /* Github Trending Widget */,
+				D46EFA5B200222C4009EB955 /* Frameworks */,
 				D46EFA4220022286009EB955 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D46EFA4120022286009EB955 /* Github Trending.app */,
+				D46EFA5A200222C3009EB955 /* Github Trending Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +98,30 @@
 			isa = PBXGroup;
 			children = (
 				D46EFA4420022286009EB955 /* AppDelegate.swift */,
-				D46EFA4620022286009EB955 /* ViewController.swift */,
 				D46EFA4820022286009EB955 /* Main.storyboard */,
 				D46EFA4B20022286009EB955 /* Assets.xcassets */,
 				D46EFA4D20022286009EB955 /* LaunchScreen.storyboard */,
 				D46EFA5020022286009EB955 /* Info.plist */,
+				D46EFA6E20027BE9009EB955 /* TrendingTableViewController.swift */,
 			);
 			path = "Github Trending";
+			sourceTree = "<group>";
+		};
+		D46EFA5B200222C4009EB955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D46EFA5C200222C4009EB955 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D46EFA5E200222C4009EB955 /* Github Trending Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D46EFA5F200222C4009EB955 /* TodayViewController.swift */,
+				D46EFA64200222C4009EB955 /* Info.plist */,
+			);
+			path = "Github Trending Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +134,34 @@
 				D46EFA3D20022286009EB955 /* Sources */,
 				D46EFA3E20022286009EB955 /* Frameworks */,
 				D46EFA3F20022286009EB955 /* Resources */,
+				D46EFA6B200222C4009EB955 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D46EFA66200222C4009EB955 /* PBXTargetDependency */,
 			);
 			name = "Github Trending";
 			productName = "Github Trending";
 			productReference = D46EFA4120022286009EB955 /* Github Trending.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D46EFA59200222C3009EB955 /* Github Trending Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46EFA68200222C4009EB955 /* Build configuration list for PBXNativeTarget "Github Trending Widget" */;
+			buildPhases = (
+				D46EFA56200222C3009EB955 /* Sources */,
+				D46EFA57200222C3009EB955 /* Frameworks */,
+				D46EFA58200222C3009EB955 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Github Trending Widget";
+			productName = "Github Trending Widget";
+			productReference = D46EFA5A200222C3009EB955 /* Github Trending Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +174,10 @@
 				ORGANIZATIONNAME = Stephan;
 				TargetAttributes = {
 					D46EFA4020022286009EB955 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D46EFA59200222C3009EB955 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				D46EFA4020022286009EB955 /* Github Trending */,
+				D46EFA59200222C3009EB955 /* Github Trending Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D46EFA58200222C3009EB955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +227,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46EFA4720022286009EB955 /* ViewController.swift in Sources */,
 				D46EFA4520022286009EB955 /* AppDelegate.swift in Sources */,
+				D46EFA6F20027BE9009EB955 /* TrendingTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46EFA56200222C3009EB955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46EFA7020027C7F009EB955 /* TrendingTableViewController.swift in Sources */,
+				D46EFA60200222C4009EB955 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D46EFA66200222C4009EB955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46EFA59200222C3009EB955 /* Github Trending Widget */;
+			targetProxy = D46EFA65200222C4009EB955 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D46EFA4820022286009EB955 /* Main.storyboard */ = {
@@ -273,12 +381,13 @@
 		D46EFA5420022286009EB955 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JKMV57Y77;
 				INFOPLIST_FILE = "Github Trending/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stephancill.Github-Trending";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephan.Github-Trending";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -288,13 +397,44 @@
 		D46EFA5520022286009EB955 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JKMV57Y77;
 				INFOPLIST_FILE = "Github Trending/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.stephancill.Github-Trending";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephan.Github-Trending";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D46EFA69200222C4009EB955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JKMV57Y77;
+				INFOPLIST_FILE = "Github Trending Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephan.Github-Trending.Github-Trending-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D46EFA6A200222C4009EB955 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JKMV57Y77;
+				INFOPLIST_FILE = "Github Trending Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stephan.Github-Trending.Github-Trending-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +457,15 @@
 			buildConfigurations = (
 				D46EFA5420022286009EB955 /* Debug */,
 				D46EFA5520022286009EB955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46EFA68200222C4009EB955 /* Build configuration list for PBXNativeTarget "Github Trending Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46EFA69200222C4009EB955 /* Debug */,
+				D46EFA6A200222C4009EB955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -48,7 +48,7 @@ class TrendingTableViewController: UITableViewController {
 	
 	func getTrending(language: String="", callback: @escaping ([Repo]?, Error?) -> ()) {
 		// Locally hosted API
-		let endpoint = "https://github-trending.herokuapp.com/trending"
+		let endpoint = "http://stephancill.ddns.net:8000/trending"
 		// HTTP Request
 		URLSession.shared.dataTask(with: URL(string: endpoint)!) { (data, response, error) in
 			if let error = error {
@@ -103,7 +103,7 @@ class TrendingTableViewController: UITableViewController {
 
 	// MARK: - Table view data source
 	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 40
+		return 50
 	}
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
@@ -121,7 +121,7 @@ class TrendingTableViewController: UITableViewController {
 		cell.subviews.forEach { (subview) in
 			subview.removeFromSuperview()
 		}
-		// Configure the cell...
+		// Configure the cell... TODO: Add use AutoLayout instead
 		let titleLabel = { () -> UILabel in
 			let label = UILabel(frame: CGRect(x: 10, y: 2, width: 0, height: 18))
 			label.text = "\(repo.title)"
@@ -143,7 +143,7 @@ class TrendingTableViewController: UITableViewController {
 		cell.addSubview(starsLabel)
 		
 		let descriptionLabel = { () -> UILabel in
-			let label = UILabel(frame: CGRect(x: 10, y: titleLabel.frame.maxY + 3, width: cell.frame.width - 20, height: 14))
+			let label = UILabel(frame: CGRect(x: 10, y: titleLabel.frame.maxY + 7, width: cell.frame.width - 20, height: 14))
 			label.text = "\(repo.description)"
 			label.font = UIFont(name: "Helvetica", size: 12)
 			return label
